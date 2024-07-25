@@ -17,6 +17,7 @@ resource "azurerm_storage_account" "st" {
   account_replication_type = "LRS"
   account_kind             = "StorageV2"
   is_hns_enabled           = var.hns_enabled
+  min_tls_version          = "TLS1_2"
 
   tags = var.tags
   
